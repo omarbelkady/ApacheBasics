@@ -1,3 +1,55 @@
 **Check status of the apache web server** 
 systemctl status httpd
 
+** used to start/stop service,reload the configuration file,restart server **
+systemctl start/stop/reload/restart httpd 
+
+
+**check if the apache web server is listening on http port **
+netstat -tupan | grep —i http 
+
+**check if the apache web server is listening on default ports i.e 80,443 or force it to listen to a appropriate port **
+netstat -tupan | grep —i '80\|443'
+
+**check if the server is actually running**
+ps aux | grep —i [h]ttp 
+
+**check the syntax of the configuration file. Used when we make change apache web server’s configuration file**
+** BEFORE restarting or reloading the configuration.**
+**GOOD CONFIG PRACTICE**
+**check the syntax and make sure whatever changes is done to the configuration file is correct**
+httpd —t
+
+** check the version of the Apache Web Server running on your system.**
+httpd -v 
+
+**Check if httpd is running **
+systemctl status httpd
+
+**start the apache web server **
+systemctl start httpd
+
+**  see the status of the web server ** 
+systemctl status httpd
+
+** stop the httpd service **
+systemctl stop httpd 
+
+** restart the httpd service **
+systemctl restart httpd
+
+
+** check the ports that the server is listening into If successful **
+** displays 0 :::443 and 0 :::80 which means it is listening to port 80 and 443**
+netstat -tupan | grep —i http
+
+** to check if the ports 443 and 80 are running **
+netstat -tupan | grep  —i '80\|443' 
+
+** Check the the number of threads running on http protocol **
+ps aux | grep —i [h]ttp
+
+** to see the version number and built information running on the Apache Web Server **
+httpd -v 
+
+
