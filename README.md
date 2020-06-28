@@ -1,13 +1,14 @@
 # ApacheBasics
 This repo will explain the basics of apache for Beginners
-Installing Apache:
-      a- rpm -q httpd
-      b- rpm -qa | grep -i httpd
-      c- yum install httpd
-      d- yum install httpd-devel
-      e- yum install mod_perl
-      f- yum install php php-mysql
-      g- yum install openssl mod_ssl
+ 	## Installing Apache:
+	
+		rpm -q httpd
+		rpm -qa | grep -i httpd
+		yum install httpd
+		yum install httpd-devel
+		yum install mod_perl
+		yum install php php-mysql
+		yum install openssl mod_ssl
 
 # To Query the Database
 rpm -q httpd
@@ -26,4 +27,3 @@ rpm -qa | grep -i http
 
 # Install an Apache supported package
 yum install mod_packagename
-
