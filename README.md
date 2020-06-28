@@ -1,6 +1,7 @@
 # ApacheBasics
 This repo will explain the basics of apache for Beginners
- 	## Installing Apache:
+ 	
+## Installing Apache:
 	
 		rpm -q httpd
 		rpm -qa | grep -i httpd
